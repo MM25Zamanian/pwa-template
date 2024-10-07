@@ -1,16 +1,34 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html
+  lang="fa-IR"
+  dir="rtl"
+  class="color-scheme-dark bg-background h-full font-vazirmatn"
+>
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Lit + TS</title>
-    <link rel="stylesheet" href="./src/index.css" />
-    <script type="module" src="/src/my-element.ts"></script>
+    <meta charset="utf-8" />
+    <title>PWA Template</title>
+
+    <base href="/" />
+
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Love Nexus" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!-- Imports an icon to represent the document. -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="/src/styles.css" />
+
+    <script type="module" src="/src/app.ts"></script>
   </head>
-  <body>
-    <my-element>
-      <h1>Vite + Lit</h1>
-    </my-element>
-  </body>
+
+  <body
+    class="bg-surface max-w-screen-sm mx-auto overflow-x-hidden overflow-y-auto w-full h-full text-onSurface"
+  ></body>
 </html>
